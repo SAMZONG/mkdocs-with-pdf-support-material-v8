@@ -39,8 +39,15 @@ This plugin is inspired by [MkDocs PDF Export Plugin][mkdocs-pdf-export-plugin].
 1. Install the package with pip:
 
     ```bash
-    pip install mkdocs-with-pdf
+    # pip install mkdocs-with-pdf
+    pip install git+https://github.com/SAMZONG/mkdocs-with-pdf-support-material-v8
     ```
+> **Forking for Fix not working on Mkdocs-Material-v8**
+
+Mkdocs-Material upgrade to 8, the footer css name from `md-footer-copyright` update to `.md_copyright`
+
+[Issue #88](https://github.com/orzih/mkdocs-with-pdf/issues/88)
+
 
 2. Enable the plugin in your `mkdocs.yml`:
 
