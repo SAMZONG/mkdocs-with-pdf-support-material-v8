@@ -22,7 +22,8 @@ def get_script_sources() -> list:
 def inject_link(html: str, href: str) -> str:
     soup = BeautifulSoup(html, 'html.parser')
 
-    footer = soup.select('.md-footer-copyright')
+#     footer = soup.select('.md-footer-copyright')
+    footer = soup.select('.md-copyright')   # thanks of https://github.com/orzih/mkdocs-with-pdf/issues/88#issuecomment-1018590667
     if footer and footer[0]:
         container = footer[0]
 
