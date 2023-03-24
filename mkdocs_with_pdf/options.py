@@ -119,7 +119,7 @@ class Options(object):
 
     @property
     def cover_title(self) -> str:
-        return self._cover_title
+        return self.cover_title
 
     @property
     def cover_subtitle(self) -> str:
